@@ -70,37 +70,3 @@ color: #2196F3;
 #nav-section .second-navbar .right-nav {
      flex: 0 0 20%;
 }
-@media only screen and (min-width:780px) and (max-width: 1125px){
-     #nav-section .second-navbar {
-       flex-wrap: nowrap;
-     }
-     #nav-section .second-navbar .left-nav {
-       flex: 0 0 60%;
-       margin-right: 40px;
-     }
-
-     #nav-section .second-navbar .right-nav {
-       flex: 0 0 34%;
-     }
-       #nav-section .second-navbar .right-nav .navbar-nav {
-         flex-direction: row;
-       }
-}
-@media only screen and (max-width:780px) and (min-width: 520px) {
-  #nav-section .second-navbar {
-    flex-direction: column;
-  }
-
-  #nav-section .second-navbar .left-nav {
-    flex: 0 0 100%;
-    margin-right: 40px;
-  }
-
-  #nav-section .second-navbar .right-nav {
-    flex: 0 0 100%;
-  }
-     #nav-section .second-navbar .right-nav .navbar-nav {
-       flex-direction: row;
-     }
-
-}
