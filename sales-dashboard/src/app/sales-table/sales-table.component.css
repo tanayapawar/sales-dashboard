@@ -1,0 +1,27 @@
+#sales-table{
+    background-color: #fff;
+}
+#sales-table .heading{
+     padding: 1rem;
+}
+#sales-table .table thead th {
+      padding: 20px 16px;
+  font-size: 12px;
+  font-weight: bold;
+}
+#sales-table .table td{
+    padding: 20px 16px;
+        font-size: 12px;
+        font-weight: 300;
+}
+#sales-table .table tbody tr:nth-of-type(odd) {
+ background-color: #f8f9fb; 
+  border-color: #e4e8ec;
+}
+#sales-table .table .lost{
+    background-color: #fff2f2;
+}
+#sales-table .table .won {
+  background-color: #e6e5e6;
+}
+
