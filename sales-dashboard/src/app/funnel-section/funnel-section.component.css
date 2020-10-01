@@ -1,0 +1,37 @@
+#funnel-section{
+    flex-wrap: nowrap;
+}
+
+#funnel-section .container .row .funnel-div{
+    flex: 0 0 50%;
+    padding-right: 40px;
+    margin-right: 20px;
+}
+#funnel-section .container .row .middle-section{
+    display: flex;
+    flex-direction: column;
+   flex: 0 0 24%;
+   margin-right: 40px;
+}
+#funnel-section .container .row .middle-section .card-item {
+  background-color: #fff;
+  padding: 30px 30px;
+  margin-bottom: 40px;
+   border-radius: 6px;
+}
+#funnel-section .container .row .middle-section .card-item .card-content {
+  padding-right: 30px;
+}
+
+#funnel-section .container .row .last-section {
+  display: flex;
+  flex-direction: column;
+ flex: 0 0 20%;
+}
+#funnel-section .container .row .last-section .card-items{
+    background: url("./../../assets/winner.png") no-repeat center center fixed;
+    background: yellow;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 6px;
+}

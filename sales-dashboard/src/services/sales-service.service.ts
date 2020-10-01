@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {SALESDATA} from './mock-data';
-import {Sales} from './../models/sales';
+import {SALESDATA, SALESNUMBER} from './mock-data';
+import {Sales, SalesNumber} from './../models/sales';
 
 @Injectable({
   providedIn: 'root'
@@ -11,5 +11,8 @@ export class SalesServiceService {
 
   getSalesData():Sales[]{
     return SALESDATA;
+  }
+  getSalesNumbers(): SalesNumber[] {
+    return SALESNUMBER;
   }
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SalesServiceService } from 'src/services/sales-service.service';
-import { Sales } from '../../models/sales';
+import { SalesNumber } from '../../models/sales';
 
 @Component({
   selector: 'app-funnel-section',
@@ -9,12 +9,12 @@ import { Sales } from '../../models/sales';
   providers: [SalesServiceService]
 })
 export class FunnelSectionComponent implements OnInit {
-  sales: Sales[];
+  salesnumbers: SalesNumber[];
 
   constructor(private dataService: SalesServiceService) { }
 
   ngOnInit(): void {
-    this.sales = this.dataService.getSalesData();
+    this.salesnumbers = this.dataService.getSalesNumbers();
   }
 
 }

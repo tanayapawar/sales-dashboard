@@ -1,1 +1,58 @@
-<p>funnel-section works!=</p>
+<section id="funnel-section">
+    <div class="container">
+    <div class="row">
+        <div class=" funnel-div">
+            <img class="img-fluid"  src="./assets/funnel.png">
+
+        </div>
+         <div class="middle-section">
+             <div class="card-item">
+                 <div class="card-img row justify-content-start">
+                       <img class="img-fluid" src="./assets/ico-calls.png">
+                 </div>
+                 <div class="card-content row justify-content-end">
+                       <h2>Calls</h2>
+                     </div>
+
+             </div>
+              <div class="card-item">
+                   <div class="card-img">
+                     <img src="./assets/ico-wins.png">
+                   </div>
+                   <div class="card-content row justify-content-end">
+                       <h2>Wins</h2>
+                   </div>
+
+              </div>
+               <div class="card-item">
+                   
+                      <img src="./assets/ico-revenue.png">
+                  
+                   
+                       <span>Incremented Revenue</span>
+
+                 
+
+               </div>
+
+         </div>
+
+        <div class="last-section">
+          <div *ngFor="let num of salesnumbers" class="card-items">
+              <div class="card-head">
+           <p>{{num.salesRep}}</p>
+           </div>
+           <div class="card-content">
+               <p>New MMR: {{num.mmr}}</p>
+               <p>New Logos: {{num.logos}}</p>
+               <p>New Calls: {{num.calls}}</p>
+                   </div>
+
+          </div>
+         
+
+        </div>
+         
+          </div>
+    </div>
+</section>

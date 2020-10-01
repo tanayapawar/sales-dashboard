@@ -1,4 +1,4 @@
-import { Sales } from 'src/models/sales';
+import { Sales, SalesNumber } from 'src/models/sales';
 
 export const SALESDATA: Sales[] =[
     {
@@ -131,4 +131,25 @@ export const SALESDATA: Sales[] =[
         status: 'Lost'
 
     }
+];
+
+export const SALESNUMBER : SalesNumber[] = [
+    {
+        salesRep:'John Doe',
+        mmr:5230,
+        logos:102,
+        calls:30
+    },
+    {
+        salesRep: 'Jane Smith',
+        mmr: 4586,
+        logos: 95,
+        calls: 23
+    },
+    {
+        salesRep: 'John Doe',
+        mmr: 3500,
+        logos: 82,
+        calls: 10
+    },
 ];

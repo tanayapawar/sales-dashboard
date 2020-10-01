@@ -5,12 +5,12 @@
      padding: 1rem;
 }
 #sales-table .table thead th {
-      padding: 20px 16px;
+      padding: 20px 8px 20px 24px;
   font-size: 12px;
   font-weight: bold;
 }
 #sales-table .table td{
-    padding: 20px 16px;
+      padding: 20px 8px 20px 24px;
         font-size: 12px;
         font-weight: 300;
 }

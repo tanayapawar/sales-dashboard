@@ -10,3 +10,9 @@ export class Sales {
     outcomeRemarks:string;
     status:string;
 }
+export class SalesNumber {
+    salesRep: string;
+    mmr:number;
+    logos:number;
+    calls:number
+}

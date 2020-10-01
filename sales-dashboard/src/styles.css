@@ -2,42 +2,13 @@
 body{
   font-family: 'Roboto',sans-serif;
   background-color: #EEE3F6;
-}
-@media only screen and (min-width:780px) and (max-width: 1125px) {
-  #nav-section .second-navbar {
-    flex-wrap: nowrap;
-  }
-
-  #nav-section .second-navbar .left-nav {
-    flex: 0 0 60%;
-    margin-right: 40px;
-  }
-
-  #nav-section .second-navbar .right-nav {
-    flex: 0 0 34%;
-  }
-
-  #nav-section .second-navbar .right-nav .navbar-nav {
-    flex-direction: row;
-  }
+  line-height: 12px;
+  overflow-x: hidden;
+ 
 }
 
-@media only screen and (max-width:780px) and (min-width: 520px) {
-  #nav-section .second-navbar {
-    flex-direction: column;
-  }
-
-  #nav-section .second-navbar .left-nav {
-    flex: 0 0 100%;
-    margin-right: 40px;
-  }
-
-  #nav-section .second-navbar .right-nav {
-    flex: 0 0 100%;
-  }
-
-  #nav-section .second-navbar .right-nav .navbar-nav {
-    flex-direction: row;
-  }
-
+h1{
+   font-size: 48px;
+   color: #231f20;
+   text-transform: uppercase;
 }
