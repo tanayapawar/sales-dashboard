@@ -65,7 +65,10 @@ color: #2196F3;
     padding: 20px;
 
 }
-
+#nav-section .navbar-toggler{
+    border: 1px solid #2196f3;
+    width: 100%;
+}
 #nav-section .second-navbar .left-nav {
      flex:0 0 76%;
      margin-right: 40px;
