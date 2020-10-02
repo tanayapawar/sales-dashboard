@@ -1,37 +1,197 @@
-#funnel-section{
-    flex-wrap: nowrap;
+#funnel-section {
+  flex-wrap: nowrap;
+  margin-bottom: 2rem;
 }
 
-#funnel-section .container .row .funnel-div{
-    flex: 0 0 50%;
-    padding-right: 40px;
-    margin-right: 20px;
+#funnel-section .container .row .funnel-div {
+  background-image: url("../../assets/funnel.png");
+  background-repeat: no-repeat;
+   background-position: center center;
+  background-size: 99% 100%;
+  flex: 0 0 45%;
+  text-align: center;
+  margin-right:4.1rem;
 }
-#funnel-section .container .row .middle-section{
-    display: flex;
-    flex-direction: column;
-   flex: 0 0 24%;
-   margin-right: 40px;
+#funnel-section .container .row .funnel-div .status{
+  padding: 19px;
+  color: #ffffff;
 }
+#funnel-section .container .row .funnel-div .status p  {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+#funnel-section .container .row .funnel-div .status p.won{
+ font-size: 48px;
+ font-weight: bold;
+ margin-bottom: 0.5rem;
+}
+#funnel-section .container .row .funnel-div .status h5 {
+  font-size: 48px;
+  font-weight: bold;
+}
+#funnel-section .container .row .middle-section {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 25%;
+  margin-right: 40px;
+}
+
 #funnel-section .container .row .middle-section .card-item {
   background-color: #fff;
   padding: 30px 30px;
   margin-bottom: 40px;
-   border-radius: 6px;
-}
-#funnel-section .container .row .middle-section .card-item .card-content {
-  padding-right: 30px;
+  border-radius: 6px;
 }
 
+#funnel-section .container .row .middle-section .card-item .card-content {
+  padding-right: 30px;
+  flex-direction: column;
+  text-align: right;
+}
+#funnel-section .container .row .middle-section .card-item .card-content .heading{
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c3e50;
+  text-transform: uppercase;
+
+}
+#funnel-section .container .row .middle-section .card-item .card-content .heading-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2196f3;
+
+}
 #funnel-section .container .row .last-section {
   display: flex;
   flex-direction: column;
- flex: 0 0 20%;
+  flex: 0 0 20%;
 }
-#funnel-section .container .row .last-section .card-items{
-    background: url("./../../assets/winner.png") no-repeat center center fixed;
-    background: yellow;
-    margin-bottom: 40px;
-    padding: 30px;
-    border-radius: 6px;
+
+#funnel-section .container .row .last-section .card-items {
+  background-image: url("../../assets/winner.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-bottom: 40px;
+  padding: 30px;
+height: 218px;
+  border-radius: 6px;
+}
+
+#funnel-section .container .row .last-section .card-items:nth-child(1) {
+  background-color: #1976d2;
+}
+
+#funnel-section .container .row .last-section .card-items:nth-child(2) {
+  background-color: #2196f3;
+}
+
+#funnel-section .container .row .last-section .card-items:nth-child(3) {
+  background-color: #64b5f6;
+}
+
+#funnel-section .container .row .last-section .card-items .card-head {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+      margin-bottom: 3rem;
+}
+#funnel-section .container .row .last-section .card-items .card-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+#funnel-section .container .row .last-section .card-items .card-content .label p{
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 1.6rem;
+}
+#funnel-section .container .row .last-section .card-items .card-content .value p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+      margin-bottom: 1.6rem;
+}
+#funnel-section .container .row .last-section .card-items .card-content .label p:last-child {
+  margin-bottom: 0;
+}
+
+#funnel-section .container .row .last-section .card-items .card-content .value p:last-child{
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width:990px) and (max-width: 1125px) {
+  #funnel-section .container .row .funnel-div {
+    flex: 0 0 40%;
+  }
+  #funnel-section .container .row .funnel-div .status p {
+    font-size: 12px;
+  }
+#funnel-section .container .row .funnel-div .status h5 {
+  font-size: 25px;
+}
+#funnel-section .container .row .funnel-div .status p.won {
+  font-size: 25px;
+}
+#funnel-section .container .row .funnel-div .status {
+  padding: 36px;
+}
+#funnel-section .container .row .middle-section .card-item .card-content .heading-number {
+  font-size: 35px;
+}
+#funnel-section .container .row .last-section .card-items {
+  height: 204px;
+}
+#funnel-section .container .row .last-section .card-items .card-content .label p {
+  font-size: 12px;
+ 
+}
+#funnel-section .container .row .last-section .card-items .card-content .value p {
+  font-size: 18px;
+  
+}
+}
+@media only screen and (min-width:480px) and (max-width: 990px) {
+ #funnel-section .container .row .funnel-div {
+   flex: 0 0 100%;
+ }
+ #funnel-section .container .row .middle-section {
+   flex: 0 0 44%;
+   margin-top: 40px;
+ }
+ #funnel-section .container .row .last-section {
+   flex: 0 0 44%;
+   margin-top: 40px;
+ }
+}
+@media only screen and (max-width:480px){
+  
+  #funnel-section .container .row .funnel-div {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+  #funnel-section .container .row .funnel-div .status {
+    padding: 10px 0 10px 0;
+  }
+   #funnel-section .container .row .funnel-div .status p {
+     font-size: 14px;
+   }
+   #funnel-section .container .row .funnel-div .status p.won {
+     font-size: 17px;
+   }
+
+   #funnel-section .container .row .funnel-div .status h5 {
+     font-size: 20px;
+   }
+#funnel-section .container .row .middle-section {
+  flex: 0 0 100%;
+  padding: 30px 30px 0;
+}
+
+#funnel-section .container .row .last-section {
+  flex: 0 0 100%;
+  padding:0 30px 0;
+}
 }

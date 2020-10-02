@@ -16,3 +16,13 @@ export class SalesNumber {
     logos:number;
     calls:number
 }
+
+export class SalesStatus {
+    leadIn: number;
+    contactMade: number;
+    needsDefine: number;
+    negotiationStarted: number;
+    proposalMade: number;
+    won: number;
+
+}

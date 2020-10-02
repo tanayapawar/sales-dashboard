@@ -1,4 +1,4 @@
-import { Sales, SalesNumber } from 'src/models/sales';
+import { Sales, SalesNumber, SalesStatus } from 'src/models/sales';
 
 export const SALESDATA: Sales[] =[
     {
@@ -147,9 +147,20 @@ export const SALESNUMBER : SalesNumber[] = [
         calls: 23
     },
     {
-        salesRep: 'John Doe',
+        salesRep: 'Ethan Hunt',
         mmr: 3500,
         logos: 82,
         calls: 10
     },
+];
+
+export const SALESSTATUS : SalesStatus[] = [
+    {
+        leadIn: 25,
+        contactMade: 18,
+        needsDefine: 12,
+        negotiationStarted: 8,
+        proposalMade: 5,
+        won: 3
+    }
 ];

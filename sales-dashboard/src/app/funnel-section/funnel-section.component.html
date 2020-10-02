@@ -1,58 +1,89 @@
 <section id="funnel-section">
-    <div class="container">
+  <div class="container">
     <div class="row">
-        <div class=" funnel-div">
-            <img class="img-fluid"  src="./assets/funnel.png">
+      <div class=" funnel-div" *ngFor="let status of salesstatus">
+        <div class="status">
+          <p>Lead In</p>
+          <h5>{{status.leadIn}}</h5>
+        </div>
+        <div class="status">
+          <p>Contact Made</p>
+          <h5>{{status.contactMade}}</h5>
+        </div>
+        <div class="status">
+          <p>Needs Define</p>
+          <h5>{{status.needsDefine}}</h5>
+        </div>
+        <div class="status">
+          <p>Proposal Made</p>
+          <h5>{{status.proposalMade}}</h5>
+        </div>
+        <div class="status">
+          <p>Negotiation Started</p>
+          <h5>{{status.negotiationStarted}}</h5>
+        </div>
+        <div class="status ">
+          <p class="won">Won</p>
+          <h5>{{status.won}}</h5>
+        </div>
+      </div>
+      <div class="middle-section">
+        <div class="card-item">
+          <div class="card-img">
+            <img class="img-fluid" src="./assets/ico-calls.png">
+          </div>
+          <div class="card-content row">
+            <h2 class="heading">Calls</h2>
+            <h2 class="heading-number">10 / 15</h2>
+          </div>
 
         </div>
-         <div class="middle-section">
-             <div class="card-item">
-                 <div class="card-img row justify-content-start">
-                       <img class="img-fluid" src="./assets/ico-calls.png">
-                 </div>
-                 <div class="card-content row justify-content-end">
-                       <h2>Calls</h2>
-                     </div>
-
-             </div>
-              <div class="card-item">
-                   <div class="card-img">
-                     <img src="./assets/ico-wins.png">
-                   </div>
-                   <div class="card-content row justify-content-end">
-                       <h2>Wins</h2>
-                   </div>
-
-              </div>
-               <div class="card-item">
-                   
-                      <img src="./assets/ico-revenue.png">
-                  
-                   
-                       <span>Incremented Revenue</span>
-
-                 
-
-               </div>
-
-         </div>
-
-        <div class="last-section">
-          <div *ngFor="let num of salesnumbers" class="card-items">
-              <div class="card-head">
-           <p>{{num.salesRep}}</p>
-           </div>
-           <div class="card-content">
-               <p>New MMR: {{num.mmr}}</p>
-               <p>New Logos: {{num.logos}}</p>
-               <p>New Calls: {{num.calls}}</p>
-                   </div>
+        <div class="card-item">
+          <div class="card-img">
+            <img class="img-fluid" src="./assets/ico-wins.png">
+          </div>
+          <div class="card-content row ">
+            <h2 class="heading">Wins</h2>
+            <h2 class="heading-number">1 / 3</h2>
+          </div>
+        </div>
+        <div class="card-item ">
+           <div class="card-img">
+          <img class="img-fluid"  src="./assets/ico-revenue.png">
+          </div>
+          <div class="card-content row ">
+            <h2 class="heading">Incremented Revenue</h2>
+            <h2 class="heading-number">80k / 100k</h2>
 
           </div>
-         
+        </div>
+
+      </div>
+
+      <div class="last-section">
+        <div *ngFor="let num of salesnumbers" class="card-items">
+          <div class="card-head">
+            <p>{{num.salesRep}}</p>
+          </div>
+          <div class="card-content">
+            <div class="label">
+              <p>New MMR </p>
+              <p>New Logos </p>
+              <p>New Calls</p>
+            </div>
+            <div class="value">
+              <p>{{num.mmr}}</p>
+              <p> {{num.logos}}</p>
+              <p>{{num.calls}}</p>
+            </div>
+
+          </div>
 
         </div>
-         
-          </div>
+
+
+      </div>
+
     </div>
+  </div>
 </section>

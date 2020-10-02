@@ -5,6 +5,13 @@
 #nav-section .nav-logo .img-div{
   padding-left:0;
 }
+#nav-section .nav-logo h1{
+   font-size: 48px;
+   color: #231f20;
+   text-transform: uppercase;
+   margin-top: 1rem;
+}
+
 #nav-section .navbar{
     background-color: #fff;
     width: 100%;
@@ -63,6 +70,17 @@ color: #2196F3;
      flex:0 0 76%;
      margin-right: 40px;
 }
+#nav-section .second-navbar .left-nav .dropdown{
+    /*container for custom dropdown arrow*/
+    -webkit-appearance: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 2px 30px 2px 2px;
+    border: none;
+    background-image: url("./../assets/ico-down-arrow.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
 #nav-section .second-navbar .right-nav {
      flex: 0 0 20%;
 }
@@ -86,6 +104,7 @@ color: #2196F3;
 }
 
 @media only screen and (max-width:780px) {
+ 
   #nav-section .second-navbar {
     flex-direction: column;
   }
@@ -104,3 +123,9 @@ color: #2196F3;
   }
 
 }
+@media only screen and (max-width:480px) {
+#nav-section .nav-logo h1 {
+  font-size: 37px;
+}
+}
+ 
